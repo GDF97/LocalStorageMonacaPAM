@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<main class="app">
+    <header class="headerApp">
+      <button class="btn-mobile">
+        <span class="hamb"></span>
+      </button>
+    </header>
+
+    <h1 class="title">LocalStorage - PAM</h1>
+
+    <div class="inputWrapper">
+      <div class="inputGroup">
+        <label for="">Time:</label>
+        <input type="text" name="equipe" id="equipe" placeholder="Insira o nome do time" autocomplete="off" />
+      </div>
+
+      <div class="inputGroup">
+        <label for="">Player:</label>
+        <input type="text" name="player" id="player" placeholder="Insira o nome do jogador" autocomplete="off" />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btnCadastrar btn">Cadastrar</button>
+      <button class="btnListar btn">Listar</button>
+    </div>
+
+    <nav class="navbar-lateral">
+      <div class="list-container">
+        <div class="btn-close">
+          <span class="close"></span>
+        </div>
+        <h2>Lista de Jogadores e Times</h2>
+        <ul class="list"></ul>
+      </div>
+    </nav>
+  </main>
+    
+    <script src="components/script.js"> </script>
+</body>
+</html>
